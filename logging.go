@@ -51,7 +51,7 @@ var DefaultLoggingConfig LoggingConfig
 
 func init() {
 	// setup the available formatters.
-	DefaultLoggingConfig.DateTimeFormat = "%d-%d-%d %d:%d:%d.%d"
+	DefaultLoggingConfig.DateTimeFormat = "%02d-%02d-%04d %02d:%02d:%02d.%d"
 	DefaultLoggingConfig.Separator = " - "
 	DefaultLoggingConfig.Writer = os.Stdout
 	availableFormatters = make(map[string]func(
